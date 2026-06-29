@@ -1,0 +1,53 @@
+name: Crypto Lab CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run classical ciphers
+        run: |
+          cd 01_classical
+          python caesar.py
+          python frequency_analysis.py
+
+      - name: Run symmetric encryption
+        run: |
+          cd 02_symmetric
+          python aes_gcm.py
+
+      - name: Run hashing and HMAC
+        run: |
+          cd 03_hash
+          python hash_hmac.py
+
+      - name: Run asymmetric encryption
+        run: |
+          cd 04_asymmetric
+          python rsa_basic.py
+
+      - name: Run TLS inspection
+        run: |
+          cd 05_realworld
+          python inspect_tls.py
