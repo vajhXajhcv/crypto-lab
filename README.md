@@ -11,13 +11,13 @@
 
 ## 学习路线图
 
-| 阶段 | 目录 | 主题 | 关键概念 |
-|------|------|------|---------|
-| 01 | `01_classical/` | 古典密码 | 凯撒密码、频率分析 |
-| 02 | `02_symmetric/` | 对称加密 | AES-256-GCM |
-| 03 | `03_hash/` | 哈希与认证 | SHA-256、HMAC、Argon2id |
-| 04 | `04_asymmetric/` | 非对称加密 | RSA 加密与数字签名 |
-| 05 | `05_realworld/` | 真实世界协议 | TLS/HTTPS 证书检查 |
+| 阶段 | 目录 | 主题 | 关键概念 | 练习 |
+|------|------|------|---------|------|
+| 01 | `01_classical/` | 古典密码 | 凯撒密码、频率分析 | [EXERCISES.md](01_classical/EXERCISES.md) |
+| 02 | `02_symmetric/` | 对称加密 | AES-256-GCM | [EXERCISES.md](02_symmetric/EXERCISES.md) |
+| 03 | `03_hash/` | 哈希与认证 | SHA-256、HMAC、Argon2id | [EXERCISES.md](03_hash/EXERCISES.md) |
+| 04 | `04_asymmetric/` | 非对称加密 | RSA 加密与数字签名 | [EXERCISES.md](04_asymmetric/EXERCISES.md) |
+| 05 | `05_realworld/` | 真实世界协议 | TLS/HTTPS 证书检查 | [EXERCISES.md](05_realworld/EXERCISES.md) |
 
 ---
 
