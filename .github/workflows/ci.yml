@@ -26,28 +26,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run classical ciphers
+      - name: Run all example scripts
         run: |
           cd 01_classical
           python caesar.py
           python frequency_analysis.py
-
-      - name: Run symmetric encryption
-        run: |
-          cd 02_symmetric
+          cd ../02_symmetric
           python aes_gcm.py
-
-      - name: Run hashing and HMAC
-        run: |
-          cd 03_hash
+          cd ../03_hash
           python hash_hmac.py
-
-      - name: Run asymmetric encryption
-        run: |
-          cd 04_asymmetric
+          cd ../04_asymmetric
           python rsa_basic.py
-
-      - name: Run TLS inspection
-        run: |
-          cd 05_realworld
+          cd ../05_realworld
           python inspect_tls.py
+
+      - name: Run pytest
+        run: pytest -v
