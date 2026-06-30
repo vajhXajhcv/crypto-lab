@@ -18,6 +18,7 @@
 | 03 | `03_hash/` | 哈希与认证 | SHA-256、HMAC、Argon2id | [EXERCISES.md](03_hash/EXERCISES.md) |
 | 04 | `04_asymmetric/` | 非对称加密 | RSA 加密与数字签名 | [EXERCISES.md](04_asymmetric/EXERCISES.md) |
 | 05 | `05_realworld/` | 真实世界协议 | TLS/HTTPS 证书检查 | [EXERCISES.md](05_realworld/EXERCISES.md) |
+| 06 | `06_advanced/` | 进阶主题 | DH、ECDSA、Fernet、JWT | [README.md](06_advanced/README.md) |
 
 ---
 

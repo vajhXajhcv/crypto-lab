@@ -39,6 +39,11 @@ jobs:
           python rsa_basic.py
           cd ../05_realworld
           python inspect_tls.py
+          cd ../06_advanced
+          python diffie_hellman.py
+          python ecdsa.py
+          python fernet.py
+          python jwt_verify.py
 
       - name: Run pytest
         run: pytest -v
