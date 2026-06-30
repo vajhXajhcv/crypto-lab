@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Lab · 密码学实验室</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2em 1.5em;
+      color: #333;
+      background: #fafafa;
+    }
+    h1 { font-size: 2.2em; margin-bottom: 0.2em; color: #111; }
+    .tagline { color: #666; font-size: 1.15em; margin-bottom: 2em; }
+    h2 { font-size: 1.4em; margin-top: 1.8em; margin-bottom: 0.6em; color: #222; }
+    p { margin-bottom: 1em; }
+    ul { padding-left: 1.5em; }
+    li { margin-bottom: 0.5em; }
+    .cta {
+      margin-top: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 0.7em 1.4em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .primary { background: #2563eb; color: white; }
+    .secondary { background: white; color: #2563eb; border: 1px solid #2563eb; }
+    code {
+      background: #f0f0f0;
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 1em;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    footer {
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 1px solid #e5e5e5;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crypto Lab · 密码学实验室</h1>
+  <p class="tagline">从零开始用 Python 跑通密码学核心概念</p>
+
+  <p>
+    一套面向初学者的密码学动手练习。不追求数学证明，先用代码建立直觉，再回头补理论。
+  </p>
+
+  <h2>包含内容</h2>
+  <ul>
+    <li><strong>古典密码</strong>：凯撒密码、频率分析</li>
+    <li><strong>对称加密</strong>：AES-256-GCM</li>
+    <li><strong>哈希与认证</strong>：SHA-256、HMAC、Argon2id</li>
+    <li><strong>非对称加密</strong>：RSA 加密与数字签名</li>
+    <li><strong>真实世界协议</strong>：TLS/HTTPS 证书检查</li>
+    <li><strong>进阶主题</strong>：Diffie-Hellman、ECDSA、Fernet、JWT</li>
+  </ul>
+
+  <h2>快速开始</h2>
+  <pre><code>git clone https://github.com/vajhXajhcv/crypto-lab.git
+cd crypto-lab
+python -m venv venv
+source venv/bin/activate  # Windows: .\venv\Scripts\activate
+pip install -r requirements.txt
+pytest -v</code></pre>
+
+  <div class="cta">
+    <a class="primary" href="https://github.com/vajhXajhcv/crypto-lab">查看 GitHub 仓库</a>
+    <a class="secondary" href="https://wumingmp.me/projects/crypto-lab/">项目介绍页</a>
+  </div>
+
+  <footer>
+    由 <a href="https://wumingmp.me">无名苗圃</a> 维护 · 仅供学习使用
+  </footer>
+</body>
+</html>
