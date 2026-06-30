@@ -5,7 +5,10 @@
 > 适合人群：对密码学有兴趣、希望从代码层面理解加密原理的开发者。
 > 不需要很深的数学基础，先写代码，再补理论。
 
-[![Crypto Lab CI](https://github.com/vajhXajhcv/crypto-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/crypto-lab/actions/workflows/ci.yml)
+[![Crypto Lab CI](https://github.com/vajhXajhcv/crypto-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/vajhXajhcv/crypto-lab/actions/workflows/ci.yml)
+
+**在线预览**：https://vajhxajhcv.github.io/crypto-lab/  
+**项目介绍**：https://wumingmp.me/projects/crypto-lab/
 
 ---
 
